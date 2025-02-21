@@ -5,15 +5,15 @@ Rede Neural Convolucional VGG13
 
  ![alt text](images/rede-vgg13.png)
 
-# Crie um novo ambiente Conda
+# Como executar:
+## Crie um novo ambiente Conda
 conda create --name vgg13_env python=3.8
 
-# Ative o ambiente
+## Ative o ambiente
 conda activate vgg13_env
 
-# Instale o TensorFlow com suporte para GPU
-conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
-pip install tensorflow-gpu
+## Instale o TensorFlow com suporte para GPU e outras dependências
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 tensorflow-gpu numpy matplotlib scikit-learn
 
-# Instale outras dependências
-pip install numpy matplotlib scikit-learn
+## Execute o código
+python index.py
