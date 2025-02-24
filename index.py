@@ -81,7 +81,7 @@ model.compile(
 )
 
 # Treinando modelo com Data Augmentation
-history = model.fit(datagen.flow(train_images, train_labels, batch_size=32), epochs=20, validation_data=(test_images, test_labels))
+history = model.fit(train_images, train_labels, batch_size=32, epochs=20)
 
 # Testando modelo
 test_loss, test_acc = model.evaluate(test_images, test_labels, batch_size=64, verbose=1)
